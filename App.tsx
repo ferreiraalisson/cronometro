@@ -68,7 +68,7 @@ class Cronometro extends Component<{}, CronometroState>{
         </View>
         <View style={customize.ultArea}>
           <Text style={customize.ultTxt}>Último tempo:</Text>
-          <Text style={customize.ultTxt}>{this.state.ultimo} </Text>
+          <Text style={customize.ultTxt}>{this.state.ultimo?.toFixed(2)} </Text>
         </View>
       </View>
     )
