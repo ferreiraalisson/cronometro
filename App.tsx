@@ -61,12 +61,14 @@ class Cronometro extends Component<{}, CronometroState>{
           <TouchableOpacity style={customize.btn}>
             <Text style={customize.btnTexto} onPress={this.iniciar}>INICIAR</Text>
           </TouchableOpacity>
+
           <TouchableOpacity style={customize.btn}>
             <Text style={customize.btnTexto} onPress={this.reset}>RESET</Text>
           </TouchableOpacity>
         </View>
         <View style={customize.ultArea}>
-          <Text style={customize.ultTxt}>Último tempo: {this.state.ultimo} </Text>
+          <Text style={customize.ultTxt}>Último tempo:</Text>
+          <Text style={customize.ultTxt}>{this.state.ultimo} </Text>
         </View>
       </View>
     )
